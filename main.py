@@ -1,4 +1,4 @@
-from helper import extract_recipe_name
+from helper import extract_recipe_name, get_verb, get_noun
 import re
 
 back = True
@@ -8,8 +8,10 @@ while back:
         word_list = user.split()
         if word_list[0] == 'what':
             print("\nwhat")
+            print(get_noun(user))
         elif word_list[0] == 'how':
             print('\nhow')
+            print(get_verb(user))
         elif word_list[0] == 'q':
             print("quit the conversation")
             back = False
