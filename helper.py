@@ -9,7 +9,7 @@ def extract_recipe_name(link):
     if recipe_name=='':
         recipe_name = word_list[len(word_list)-2]
     # print(recipe_name)
-    recipe_name = recipe_name.replace('-',' ')
+    recipe_name = recipe_name.replace('-',' ').strip()
     return recipe_name
 
 # link = 'https://www.allrecipes.com/recipe/218091/classic-and-simple-meat-lasagna/'
